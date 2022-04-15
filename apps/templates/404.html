@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class='ui vertical masthead center aligned segment'>
+    <div class='ui text container'>
+        <h3 style="font-size: 10em;">&#x1F633;</h3>
+        <h1 id="wl_title">404</h1>
+        <p id='tagline'>Sorry, Page not found!</p>
+        <a class="green ui button" href="{{ url_for('webapp.dashboard') }}">Dashboard</a>
+    </div>
+</div>
+{% endblock %}
