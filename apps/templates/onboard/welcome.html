@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class='ui vertical masthead center aligned segment'>
+    <div class='ui text container'>
+        <h1 id="wl_title">&#x1F44B; Welcome!</h1>
+        <p id='tagline'>Pflask is a monitoring app to your network devices.</p>
+        <a class="green ui button" href="{{ url_for('onboard.onboard') }}">Setup Pflask</a>
+    </div>
+</div>
+{% endblock %}
