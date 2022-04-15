@@ -10,6 +10,3 @@ def heartbeat():
 @web_app.route('/dashboard', strict_slashes=False)
 def dashboard():
     return render_template('web/dashboard.html')
-
-
-
