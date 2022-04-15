@@ -1,0 +1,14 @@
+import os
+
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+
+DEBUG = False
+
+SECRET_KEY = 'SECRET_KEY_FOR_SESSION_SIGNING'
+
+SQLALCHEMY_DATABASE_URI = f"sqlite:///{os.path.join(BASE_DIR, 'data.db')}"
+DATABASE_CONNECT_OPTION = {}
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+CSRF_ENABLED = True
+CSRF_SESSION_KEY = 'SOMETHING_IMPOSSIBLE_TO_GUESS'
